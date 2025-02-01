@@ -163,9 +163,20 @@
 		renderButtons();
 	}
 
+	let timerId;
+
 	function onInput(event) {
-		localStorage.setItem('note', event.target.value);
+		if (timerId) {
+			clearTimeout(timerId);
+		}
+		timerId = setTimeout(() => {
+			localStorage.setItem('note', event.target.value);
+		}, 1000);
 	}
+
+	window.onbeforeunload = () => {
+		localStorage.setItem('note', editor.value);
+	};
 
 	function trash() {
 		localStorage.removeItem('note');
