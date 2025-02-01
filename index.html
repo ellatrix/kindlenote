@@ -58,6 +58,7 @@
 		box-sizing: border-box;
 		font-family: serif;
 		font-size: 20px;
+		color: #000;
 	}
 
 	p {
@@ -174,7 +175,7 @@
 	}
 
 	editor.value = localStorage.getItem('note');
-	editor.style.fontSize = localStorage.getItem('fontSize') || '16px';
+	editor.style.fontSize = localStorage.getItem('fontSize') || '20px';
 
 	function sanitizeFilename(name) {
 		return name.replace(/[\\\/:*?"<>|]/g, '') .trim().replace(/\.$/, '') || 'file';
