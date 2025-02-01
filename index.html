@@ -103,14 +103,14 @@
 			help.setAttribute('aria-hidden', 'true');
 		}
 	</script>
-	<p>This tiny app allows you to take notes in your Kindle’s Web Browser.</p>
-	<p>The note will be saved, so don’t worry about closing the browser or refreshing the page.</p>
-	<p>You can download the note as a text file, and then it will appear in your Kindle’s Library. When you connect your Kindle by USB, you can transfer the files.</p>
+	<p>This tiny app allows you to take <em>short</em> notes in your Kindle’s Web Browser. Typing can be laggy due to the e-ink display.</p>
+	<p>The text will be saved in local storage, so don’t worry about closing the browser or refreshing the page.</p>
+	<p>You can download the note as a text file, and then it will appear in your Kindle Library. Afterwards, when you connect your Kindle by USB, you can transfer the files.</p>
 	<p>Alternatively, you could simply take a picture of the note with your phone, and then select the text if your phone supports it.</p>
-	<p>N.b.: typing with Kindle can be laggy. This app is meant for small notes.</p>
 	<div>
 		<button onclick="localStorage.setItem('started', 'true');toggle(helpButton)">Get Started</button>
 	</div>
+	<p style="margin-top: 1em;">The app is a single file and <a href="https://github.com/ellatrix/kindlenote/blob/main/index.html">open source</a>. It only stores data locally, it does not send any data anywhere.</p>
 </div>
 <div class="modal" id="trashConfirm" aria-hidden="true">
 	<p>Are you sure you want to delete this note?</p>
