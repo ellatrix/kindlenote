@@ -108,7 +108,7 @@
 	<p>You can download the note as a text file, and then it will appear in your Kindle’s Library. When you connect your Kindle by USB, you can transfer the files.</p>
 	<p>Alternatively, you could simply take a picture of the note with your phone, and then select the text if your phone supports it.</p>
 	<div>
-		<button onclick="toggle(helpButton)">Get Started</button>
+		<button onclick="localStorage.setItem('started', 'true');toggle(helpButton)">Get Started</button>
 	</div>
 </div>
 <div class="modal" id="trashConfirm" aria-hidden="true">
